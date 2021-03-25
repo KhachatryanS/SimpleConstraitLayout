@@ -10,7 +10,7 @@
         android:id="@+id/imageView"
         android:layout_width="427dp"
         android:layout_height="279dp"
-        android:contentDescription="background picture"
+        android:contentDescription="@string/background_picture"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -30,13 +30,142 @@
         android:layout_height="81dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/round_button"
-        android:contentDescription="TODO"
+        android:contentDescription="@string/star_image"
         app:layout_constraintBottom_toBottomOf="@id/guideline1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/guideline1"
         app:srcCompat="@android:drawable/btn_star_big_off"
         tools:ignore="MissingConstraints" />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2" />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <ImageView
+        android:id="@+id/phoneIcon"
+        android:layout_width="54dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="75dp"
+        android:contentDescription="@string/phoneicon"
+        android:hapticFeedbackEnabled="false"
+        android:rotation="-90"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@id/guideline1"
+        app:srcCompat="@android:drawable/sym_action_call"
+        app:tint="#5D6AC2" />
+
+
+    <ImageView
+        android:id="@+id/msgIcon1"
+        android:layout_width="43dp"
+        android:layout_height="45dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@id/phoneIcon"
+        app:srcCompat="@android:drawable/stat_notify_chat"
+        app:tint="#029889"
+        android:contentDescription="@string/msgIcon" />
+
+    <TextView
+        android:id="@+id/phoneNumberOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/phoneNumber1"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/phoneIcon" />
+
+    <TextView
+        android:id="@+id/googleVoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/google_voice"
+        app:layout_constraintStart_toEndOf="@+id/phoneIcon"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumberOne" />
+
+
+    <ImageView
+        android:id="@+id/msgIcon2"
+        android:layout_width="43dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/msgIcon1"
+        app:srcCompat="@android:drawable/stat_notify_chat"
+        app:tint="#029889"
+        android:contentDescription="@string/msgIcon" />
+
+    <TextView
+        android:id="@+id/phoneNumberTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/phoneNumber1"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/msgIcon2" />
+
+    <TextView
+        android:id="@+id/mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/mobile"
+        app:layout_constraintBottom_toBottomOf="@+id/msgIcon2"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumberTwo" />
+
+    <View
+        android:id="@+id/breakLine"
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mobile" />
+
+    <ImageView
+        android:id="@+id/msgIcon3"
+        android:layout_width="56dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/breakLine"
+        app:srcCompat="@android:drawable/sym_action_email"
+        app:tint="#5D6AC2"
+        android:contentDescription="@string/msgIcon" />
+    <TextView
+        android:id="@+id/phoneNumberThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/studio_android_com"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/msgIcon3" />
+
+    <TextView
+        android:id="@+id/work"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/work"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumberThree" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

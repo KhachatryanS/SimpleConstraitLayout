@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">SimpleConstraitLayout</string>
+    <string name="phoneNumber1">(650) 555-1234</string>
+    <string name="background_picture">background picture</string>
+    <string name="work">Work</string>
+    <string name="studio_android_com">studio@android.com</string>
+    <string name="msgIcon">msgIcon</string>
+    <string name="mobile">Mobile</string>
+    <string name="google_voice">Google Voice</string>
+    <string name="star_image">star image</string>
+    <string name="phoneicon">phoneIcon</string>
 </resources>
